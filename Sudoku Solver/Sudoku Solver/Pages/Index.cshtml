@@ -1,10 +1,15 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Sudoku Solver";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">Sudoku Solver</h1>
+
+    <partial name="_MainBlock" model="new Sudoku_Solver.Models._MainBlockModel { Position = 0, Background = true }" />
+    <partial name="_MainBlock" model="new Sudoku_Solver.Models._MainBlockModel { Position = 9, Background = false }" />
+    <partial name="_MainBlock" model="new Sudoku_Solver.Models._MainBlockModel { Position = 18, Background = true }" />
+
+    <button type="button" class="btn btn-primary btn-lg mt-2">Solve Sudoku</button>
 </div>

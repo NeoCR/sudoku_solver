@@ -1,0 +1,7 @@
+﻿@model Sudoku_Solver.Models._InputBlockModel
+
+<div class="col-4 border @(Model.Background ? "bg-light" : "") p-2">
+    <partial name="_InputRow" model="new Sudoku_Solver.Models._InputRowModel { Position = Model.Position }" />
+    <partial name="_InputRow" model="new Sudoku_Solver.Models._InputRowModel { Position = Model.Position + 3 }" />
+    <partial name="_InputRow" model="new Sudoku_Solver.Models._InputRowModel { Position = Model.Position + 6 }" />
+</div>

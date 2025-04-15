@@ -1,0 +1,7 @@
+﻿@model Sudoku_Solver.Models._MainBlockModel
+
+<div class="row">
+    <partial name="_InputBlock" model="new Sudoku_Solver.Models._InputBlockModel { Position = Model.Position, Background = Model.Background }" />
+    <partial name="_InputBlock" model="new Sudoku_Solver.Models._InputBlockModel { Position = Model.Position + 1, Background = !Model.Background }" />
+    <partial name="_InputBlock" model="new Sudoku_Solver.Models._InputBlockModel { Position = Model.Position + 2, Background = Model.Background }" />
+</div>

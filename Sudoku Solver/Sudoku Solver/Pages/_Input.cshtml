@@ -1,0 +1,11 @@
+﻿@model Sudoku_Solver.Models._InputModel
+
+<div class="col-4 p-2">
+    <input type="number"
+           class="form-control"
+           aria-label="Posicion @Model.Position"
+           min="0"
+           max="9"
+           oninput="this.value = this.value.slice(0, 1)"
+           name="pos-@Model.Position" />
+</div>

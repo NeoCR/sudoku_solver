@@ -1,0 +1,7 @@
+﻿@model Sudoku_Solver.Models._InputRowModel
+
+<div class="row">
+    <partial name="_Input" model="new Sudoku_Solver.Models._InputModel { Position = (Model.Position * 3) + 0 }" />
+    <partial name="_Input" model="new Sudoku_Solver.Models._InputModel { Position = (Model.Position * 3) + 1 }" />
+    <partial name="_Input" model="new Sudoku_Solver.Models._InputModel { Position = (Model.Position * 3) + 2 }" />
+</div>
